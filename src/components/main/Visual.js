@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 function Visual() {
     return (
-        <figure>
+        <figure id="visual">
             <h1>Visual</h1>
         </figure>
     )
