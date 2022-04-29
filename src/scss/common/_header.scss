@@ -1,7 +1,8 @@
 header{
     width: 100%; 
-    background: #222;
    
+   
+
     .inner{
         width: 1180px; height: 80px; 
         margin: 0 auto; 
@@ -28,5 +29,31 @@ header{
             }
         }
         
+    }
+
+    &.sub{
+        background: #222;
+
+        .inner{
+            h1 a{
+                color: #fff; 
+            }
+            #gnb li a{
+                color: #fff; 
+            }
+        }
+    }
+    &.main{
+        background: #fff;
+        border-bottom: 1px solid #ccc;
+
+        .inner{
+            h1 a{
+                color: #555; 
+            }
+            #gnb li a{
+                color: #555;
+            }
+        }
     }
 }
