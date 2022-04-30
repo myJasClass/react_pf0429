@@ -5,7 +5,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Header(props) {
     const active = { color: 'aqua' };
-    const url = window.location.origin + '/react0429';
+    const url = 'https://myjasclass.github.io/react_pf0429/';
     window.history.pushstate('', '', url);
     const [page, setPage] = useState('');
     useEffect(() => {
