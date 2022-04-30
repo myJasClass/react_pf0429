@@ -12,6 +12,8 @@ import Youtube from './components/sub/Youtube';
 import Gallery from './components/sub/Gallery';
 
 function App() {
+
+
   return (
     <>
       {/* Switch 같은 경로의 router연결시 구체적인 라우터 하나만 적용  */}
