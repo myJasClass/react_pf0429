@@ -6,34 +6,24 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 function Header(props) {
     const active = { color: 'aqua' };
     const url = 'https://myjasclass.github.io/react_pf0429/';
-    window.history.pushstate('', '', url);
-    const [page, setPage] = useState('');
-    useEffect(() => {
-        window.onpopstate = function (e) {
-            setPage(e.state);
-        }
-    }, []);
 
-    function changeUrl(state = '', title = '', url = '') {
-        window.history.pushState(state, title, url);
-        setPage(state);
-    }
+
     return (
         <header className={props.type}>
             <div className='inner'>
                 <h1>
                     {/* <Link exact='true' to='/ */}
-                    <NavLink exact to='/' activeStyle={active} onClick={() => changeUrl('index', 'index', `${url}/`)}>
+                    <NavLink exact to='/' activeStyle={active} onClick={() => window.history.pushState({ data: 'index' }, 'index', '/react0429')}>
                         LOGO
                     </NavLink>
                 </h1>
                 <ul id="gnb">
                     <li>
-                        <NavLink to='/gallery' activeStyle={active} onClick={() => changeUrl('gallery', 'gallery', `${url}/gallery`)}>
+                        <NavLink to='/gallery' activeStyle={active} onClick={() => window.history.pushState({ data: 'gallery' }, 'gallery', '/react0429/gallery')}>
                             Gallery
                         </NavLink></li>
                     <li>
-                        <NavLink to='/youtube' activeStyle={active} onClick={() => changeUrl('youtube', 'youtube', `${url}/youtube`)}>
+                        <NavLink to='/youtube' activeStyle={active} onClick={() => window.history.pushState({ data: 'youtube' }, 'youtube', '/react0429/youtube')}>
                             Youtube
                         </NavLink></li>
                 </ul>
