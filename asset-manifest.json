@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react_pf0429/static/css/main.ed812eb9.css",
+    "main.js": "/react_pf0429/static/js/main.4424eafc.js",
+    "index.html": "/react_pf0429/index.html",
+    "main.ed812eb9.css.map": "/react_pf0429/static/css/main.ed812eb9.css.map",
+    "main.4424eafc.js.map": "/react_pf0429/static/js/main.4424eafc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed812eb9.css",
+    "static/js/main.4424eafc.js"
+  ]
+}
