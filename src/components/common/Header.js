@@ -21,7 +21,7 @@ function Header(props) {
             <div className='inner'>
                 <h1>
                     {/* <Link exact='true' to='/ */}
-                    <NavLink exact to='/' activeStyle={active}>
+                    <NavLink exact to='/' activeStyle={active} onClick={() => changeUrl('index', 'index', '/')}>
                         LOGO
                     </NavLink>
                 </h1>
