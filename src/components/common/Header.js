@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 function Header(props) {
     const active = { color: 'aqua' };
     const url = '/react_pf0429';
-
+    console.log(window.location.href);
 
     return (
         <header className={props.type}>
