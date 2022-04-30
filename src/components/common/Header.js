@@ -5,8 +5,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Header(props) {
     const active = { color: 'aqua' };
-    const url = '/react0429';
-    history.pushstate('', '', url);
+    const url = window.location.origin + '/react0429';
+    window.history.pushstate('', '', url);
     const [page, setPage] = useState('');
     useEffect(() => {
         window.onpopstate = function (e) {
@@ -17,7 +17,6 @@ function Header(props) {
     function changeUrl(state = '', title = '', url = '') {
         window.history.pushState(state, title, url);
         setPage(state);
-        console.log(location.href)
     }
     return (
         <header className={props.type}>
