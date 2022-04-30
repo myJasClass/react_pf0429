@@ -17,6 +17,7 @@ function Header(props) {
     function changeUrl(state = '', title = '', url = '') {
         window.history.pushState(state, title, url);
         setPage(state);
+        console.log(location.href)
     }
     return (
         <header className={props.type}>
