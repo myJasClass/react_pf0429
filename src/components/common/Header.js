@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Header(props) {
-    const active = { color: 'aqua' }
+    const active = { color: 'aqua' };
+    const url = '/react0429';
+    history.pushstate('', '', url);
     const [page, setPage] = useState('');
     useEffect(() => {
         window.onpopstate = function (e) {
@@ -21,17 +23,17 @@ function Header(props) {
             <div className='inner'>
                 <h1>
                     {/* <Link exact='true' to='/ */}
-                    <NavLink exact to='/' activeStyle={active} onClick={() => changeUrl('index', 'index', '/')}>
+                    <NavLink exact to='/' activeStyle={active} onClick={() => changeUrl('index', 'index', `${url}/`)}>
                         LOGO
                     </NavLink>
                 </h1>
                 <ul id="gnb">
                     <li>
-                        <NavLink to='/gallery' activeStyle={active} onClick={() => changeUrl('gallery', 'gallery', '/gallery')}>
+                        <NavLink to='/gallery' activeStyle={active} onClick={() => changeUrl('gallery', 'gallery', `${url}/gallery`)}>
                             Gallery
                         </NavLink></li>
                     <li>
-                        <NavLink to='/youtube' activeStyle={active} onClick={() => changeUrl('youtube', 'youtube', '/youtube')}>
+                        <NavLink to='/youtube' activeStyle={active} onClick={() => changeUrl('youtube', 'youtube', `${url}/youtube`)}>
                             Youtube
                         </NavLink></li>
                 </ul>
