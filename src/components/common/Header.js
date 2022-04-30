@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -9,6 +9,7 @@ function Header(props) {
     // const url = '/react_pf0429';
     //<NavLink to={`${url}/gallery`} activeStyle={active}   >
     // console.log(window.location.href);
+
 
     return (
         <header className={props.type}>
@@ -21,13 +22,21 @@ function Header(props) {
                 </h1>
                 <ul id="gnb">
                     <li>
+                        <NavLink to='/member' activeStyle={active}   >
+                            Member
+                        </NavLink>
+                    </li>
+
+                    <li>
                         <NavLink to='/gallery' activeStyle={active}   >
                             Gallery
-                        </NavLink></li>
+                        </NavLink>
+                    </li>
                     <li>
                         <NavLink to='/youtube' activeStyle={active}  >
                             Youtube
-                        </NavLink></li>
+                        </NavLink>
+                    </li>
                 </ul>
 
                 <FontAwesomeIcon icon={faBars} />

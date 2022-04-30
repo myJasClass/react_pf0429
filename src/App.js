@@ -10,6 +10,8 @@ import Content from './components/main/Content';
 //sub
 import Youtube from './components/sub/Youtube';
 import Gallery from './components/sub/Gallery';
+import Member from './components/sub/Member';
+
 
 function App() {
 
@@ -34,6 +36,8 @@ function App() {
 
       <Route path='/youtube' component={Youtube} />
       <Route path='/gallery' component={Gallery} />
+      <Route path='/member' component={Member} />
+
 
       {/* <Route path='/gallery'>
         <Gallery />
