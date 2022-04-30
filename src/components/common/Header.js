@@ -13,24 +13,24 @@ function Header(props) {
             <div className='inner'>
                 <h1>
                     {/* <Link exact='true' to='/ */}
-                    <NavLink exact to='/' activeStyle={active} onClick={() => window.history.pushState({ data: 'index' }, 'index', '/react0429')}>
+                    <NavLink exact to={`${url}/`} activeStyle={active}  >
                         LOGO
                     </NavLink>
                 </h1>
                 <ul id="gnb">
                     <li>
-                        <NavLink to='/gallery' activeStyle={active} onClick={() => window.history.pushState({ data: 'gallery' }, 'gallery', '/react0429/gallery')}>
+                        <NavLink to={`${url}/gallery`} activeStyle={active}   >
                             Gallery
                         </NavLink></li>
                     <li>
-                        <NavLink to='/youtube' activeStyle={active} onClick={() => window.history.pushState({ data: 'youtube' }, 'youtube', '/react0429/youtube')}>
+                        <NavLink to={`${url}/youtube`} activeStyle={active}  >
                             Youtube
                         </NavLink></li>
                 </ul>
 
                 <FontAwesomeIcon icon={faBars} />
-            </div>
-        </header>
+            </div >
+        </header >
     )
 }
 
