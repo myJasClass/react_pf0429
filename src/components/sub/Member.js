@@ -1,13 +1,12 @@
 import React from 'react'
+import Layout from '../common/Layout';
 
 function Member() {
+
     return (
-        <section className='content member'>
-            <figure></figure>
-            <div className='inner'>
-                <h1>Member</h1>
-            </div>
-        </section>
+        <Layout name={'Member'}>
+            <p>멤버 컨텐츠</p>
+        </Layout>
     )
 }
 
